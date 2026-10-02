@@ -1,6 +1,9 @@
 import { ArrowRight, Check, Music2, Play, RefreshCw, ShieldCheck, Sparkles } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
-const features = [
+type Feature = [title: string, body: string, icon: LucideIcon];
+
+const features: Feature[] = [
   ["Smart matching", "Match tracks using title, artist, duration and identifiers.", Sparkles],
   ["Review before transfer", "See confidence scores and fix uncertain matches.", Check],
   ["Duplicate protection", "Avoid adding songs that already exist in the destination.", ShieldCheck],
